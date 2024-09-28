@@ -48,20 +48,19 @@ require 'config/function.php';
     </div>
   </div>
 </nav>
-
 </section>
 
 <!-- adver -->
- <section style="background:url('gadget.jpg')no-repeat;
+ <section style="background:url('images/gadget.jpg')no-repeat;
  background-size:cover;
  height:90vh;
  width:100%;" class="py-5">
       <div class="container text-white py-5">
           <div class="row py-5">
               <div class="col-lg-6 py-5">
-<!--                 <div class="box"> -->
-                  <h1 class="fw-bold py-5 a01 letter">Marlou Linsey</h1>
-<!--                 </div> -->
+                <div class="box1">
+                  <h1 class="fw-bold py-5 a01 letter1">Marlou Linsey</h1>
+                </div>
                   <h6>Web Developer</h6>
                   <p>I have developed many types of Web Base System/Site</p>
               </div>
@@ -75,9 +74,9 @@ require 'config/function.php';
         <div class="row py-5">
             <div class="col-lg-7 m-auto">
                 <div class="row text-center">
-                  <div class="box">
-                    <h2 class="pb-3 fw-bold a01 letter">About</h2>
-                  </div>
+                    <div class="box2">
+                    <h2 class="pb-3 fw-bold a02 letter2">About</h2>
+                    </div>
                     <p>Hey, my name is Marlou Linsey and I use Migami dev as my nickname across social medias. I’m a front-end & back-end web developer from Philipines. I’m also a Self-taugh and always curious to learn more when it comes to new technologies and creative coding.</p>
                 </div>
             </div>
@@ -91,16 +90,17 @@ require 'config/function.php';
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-lg-8 m-auto text-center">
-              <div class="box">
-                <h2 class="fw-bold a01 letter">Certificate</h2>
+                <div class="box3">
+                <h2 class="fw-bold a03 letter3">Certificate</h2>
                 </div>
             </div>
         </div>
-        <div class="row text-center mb-4">
-                <img src="cert1.png"" alt="" class="img-fluid">
+        <div class="row text-center mb-4 fade">
+                <img src="cert1.png" alt="" class="img-fluid">
+            
                 <h5>FreeCodeCamp - Responsive Web Design</h5>
         </div>
-        <div class="row text-center mb-4">
+        <div class="row text-center mb-4 fade">
             <img src="cert.png"" alt="" class="img-fluid">
             <h5>FreeCodeCamp - JavaScript Algorithms and Data Structures (Beta)</h5>
     </div>
@@ -112,10 +112,10 @@ require 'config/function.php';
     <div class="container">
         <div class="row">
             <div class="col-lg-5 m-auto text-center">
-              <div class="box">
-                <h2 class="fw-bold pb-2 a01 letter">Scripting Languege</h2>
-              </div>
-       <h6>CSS (Tailwind, Bootstrap)</h6>
+                <div class="box4">
+                <h2 class="fw-bold pb-2 a04 letter4">Scripting Languege</h2>
+                </div>
+       <h6>CSS (Bootstrap)</h6>
        <h6>HTML</h6>
        <h6>PHP (Vanilla PHP, Laravel)</h6>
        <h6>JavaScript (Vanilla JS, NodeJS, ReactJS, ExpressJS, JQuery, AJAX)</h6>
@@ -133,25 +133,25 @@ require 'config/function.php';
     <div class="container py-5">
         <div class="row py-5">
             <div class="col-lg-8 m-auto text-center">
-              <div class="box">
-                <h2 class="fw-bold a01 letter">Projects</h2>
-              </div>
+                <div class="box5">
+                <h2 class="fw-bold a05 letter5">Projects</h2>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 fade">
                 <img src="3.png"" alt="" class="img-fluid">
                 <h5>Dating Site</h5>
                 <p>Stacks: HTML, CSS, Vanilla PHP, JQuery, MYSQL
                 </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 fade">
                 <img src="2.png" alt="" class="img-fluid">
                 <h5>Ecommerce</h5>
                 <p>Stacks: HTML, CSS, Vanilla PHP, JQuery, MYSQL
                 </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 fade">
                 <img src="1.png" alt="" class="img-fluid">
                 <h5>Herbs Blogs</h5>
                 <p>Stacks: HTML, CSS,MERN(MongoDB,ExpressJS,ReactJS,NodeJS)
@@ -168,9 +168,9 @@ require 'config/function.php';
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5 m-auto text-center">
-                  <div class="box">
-                    <h2 class="fw-bold a01 letter">Contact Us</h2>
-                  </div>
+                    <div class="box6">
+                    <h2 class="fw-bold a06 letter6">Contact Us</h2>
+                    </div>
                     <h6 style="color:red;">Always Be In Touch With Us</h6>
                     <br>
                 </div>
@@ -193,6 +193,7 @@ require 'config/function.php';
     </section>
 
     
+    
 <footer>
     <div class="container py-5">
 
@@ -210,23 +211,47 @@ require 'config/function.php';
           <!-- jsPDF CDN end -->
           <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
           <script src="assets/js/custom.js"></script>
-<script>
-    const square = document.querySelector('.a01');
-square.classList.remove('letter');
+          <script>
+            const count = 7;
+            console.log(count);
+            for(let i=1;count > i; i++){
+                console.log(i);
+    const square = document.querySelector('.a0'+ i);
+square.classList.remove('letter'+ i);
 
 // Create the observer, same as before:
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      square.classList.add('letter');
+      square.classList.add('letter'+i);
       return;
     }
 
-    square.classList.remove('letter');
+    square.classList.remove('letter'+i);
   });
 });
 
-observer.observe(document.querySelector('.box'));
+observer.observe(document.querySelector('.box'+i));
+            }
+
+            $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {
+            $(this).fadeTo(500,1);}
+      }
+    //    else { //object goes out of view (scrolling up)
+    //     if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+    //   }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
   </script>
     </body>
   </html>
