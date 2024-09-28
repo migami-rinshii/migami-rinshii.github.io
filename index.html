@@ -199,5 +199,23 @@ require 'config/function.php';
           <!-- jsPDF CDN end -->
           <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
           <script src="assets/js/custom.js"></script>
+<script>
+    const square = document.querySelector('.letter');
+square.classList.remove('a01');
+
+// Create the observer, same as before:
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      square.classList.add('a01');
+      return;
+    }
+
+    square.classList.remove('a01');
+  });
+});
+
+observer.observe(document.querySelector('.letter'));
+  </script>
     </body>
   </html>
