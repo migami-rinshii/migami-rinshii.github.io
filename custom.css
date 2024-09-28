@@ -87,13 +87,8 @@ transition: 0.5s;
 }
 
 .letter{
-  width: 100%;
-  text-align: center;
   animation: gradient 2.4s ease-in-out;
-  letter-spacing: 10px;
-  white-space: nowrap;
-  font-size: 20px;
-  text-indent: 10px;    
+  white-space: nowrap;    
 }
 
 
@@ -115,9 +110,7 @@ transition: 0.5s;
   }
  
   
-  100%{
-    letter-spacing: 10px;
-    text-indent: 10px;    
+  100%{    
   }
   
 }
