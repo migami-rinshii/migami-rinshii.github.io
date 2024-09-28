@@ -86,7 +86,7 @@ transition: 0.5s;
   transition: 0.5s;
 }
 
-.letter{
+.letter,letter2{
   animation: gradient 2.4s ease-in-out;
   white-space: nowrap;
 }
@@ -95,7 +95,7 @@ transition: 0.5s;
 
 
 
-.a01{ 
+.a01,a02{ 
   animation-delay: 0.1s;
 }
 @keyframes gradient{
