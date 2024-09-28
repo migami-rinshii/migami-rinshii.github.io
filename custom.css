@@ -86,17 +86,13 @@ transition: 0.5s;
   transition: 0.5s;
 }
 
-.letter,letter2{
-  animation: gradient 2.4s ease-in-out;
+.letter1,.letter2,.letter3,.letter4,.letter5,.letter6{
+  animation: gradient 1s ease-in-out;
   white-space: nowrap;
 }
 
-
-
-
-
-.a01,a02{ 
-  animation-delay: 0.1s;
+.a01,.a02,.a03,.a04,.a05,.a06{ 
+  animation-delay: 0.0s;
 }
 @keyframes gradient{
   0%{
@@ -115,4 +111,8 @@ transition: 0.5s;
     text-indent: 0px;    
   }
   
+}
+
+.fade {
+  opacity: 1;
 }
