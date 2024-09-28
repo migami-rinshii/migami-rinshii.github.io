@@ -100,8 +100,8 @@ transition: 0.5s;
 }
 @keyframes gradient{
   0%{
-    letter-spacing: 50px;
-    text-indent: 50px;    
+    letter-spacing: 10px;
+    text-indent: 10px;    
   }
   
   80%{
