@@ -204,18 +204,18 @@ require 'config/function.php';
           <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
           <script src="assets/js/custom.js"></script>
 <script>
-    const square = document.querySelector('.letter');
-square.classList.remove('a01');
+    const square = document.querySelector('.a01');
+square.classList.remove('letter');
 
 // Create the observer, same as before:
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      square.classList.add('a01');
+      square.classList.add('letter');
       return;
     }
 
-    square.classList.remove('a01');
+    square.classList.remove('letter');
   });
 });
 
