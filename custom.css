@@ -96,19 +96,20 @@ transition: 0.5s;
 }
 @keyframes gradient{
   0%{
-    letter-spacing: 10px;
-    text-indent: 10px;    
+    /* letter-spacing: 10px;
+    text-indent: 10px;     */
+    font-size: 0px;
   }
   
   80%{
-    letter-spacing: 0px;
-    text-indent: 0px;    
+    /* letter-spacing: 0px;
+    text-indent: 0px;     */
   }
  
   
   100%{
-    letter-spacing: 0px;
-    text-indent: 0px;    
+    /* letter-spacing: 0px;
+    text-indent: 0px;     */
   }
   
 }
