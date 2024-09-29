@@ -119,7 +119,7 @@ transition: 0.5s;
 .boxx7,.boxx8,.boxx9 {
   opacity: 0;
   /* transform: skewY(30deg); */
-  transform: matrix(1, 0, 0.5, 2, 0, 0);
+  transform: matrix(1, 0, -0.1, 2, 0, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
