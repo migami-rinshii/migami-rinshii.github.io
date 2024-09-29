@@ -113,6 +113,48 @@ transition: 0.5s;
   
 }
 
-.fade {
-  opacity: 1;
+.boxx1,.boxx2,.boxx3,
+.boxx4,.boxx5,.boxx6,
+.boxx7,.boxx8,.boxx9 {
+  opacity: 0;
+  /* transform: skewY(30deg); */
+  transform: matrix(1, 0, 0.5, 2, 0, 0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .boxx1,.boxx2,.boxx3,
+  .boxx4,.boxx5,.boxx6,
+  .boxx7,.boxx8,.boxx9 {
+  transition: opacity 1.5s ease, transform 1.0s ease;
+}
+}
+
+.boxx-transition1,.boxx-transition2,.boxx-transition3,
+.boxx-transition4,.boxx-transition5,.boxx-transition6,
+.boxx-transition7,.boxx-transition8,.boxx-transition9 {
+  opacity: 2;
+  transform: none;
+}
+
+.boxxx1,.boxxx2,.boxxx3,
+.boxxx4,.boxxx5,.boxxx6,
+.boxxx7,.boxxx8,.boxxx9 {
+  opacity: 0;
+  transform: skewY(50deg);
+  /* transform: matrix(1, 0, 0.5, 1, 300, 0); */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .boxxx1,.boxxx2,.boxxx3,
+  .boxxx4,.boxxx5,.boxxx6,
+  .boxxx7,.boxxx8,.boxxx9 {
+  transition: opacity 1.5s ease, transform 0.8s ease;
+}
+}
+
+.boxxx-transition1,.boxxx-transition2,.boxxx-transition3,
+.boxxx-transition4,.boxxx-transition5,.boxxx-transition6,
+.boxxx-transition7,.boxxx-transition8,.boxxx-transition9 {
+  opacity: 2;
+  transform: none;
 }
